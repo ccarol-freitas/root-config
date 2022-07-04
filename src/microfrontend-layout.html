@@ -1,0 +1,23 @@
+<single-spa-router>
+  <nav>
+    <application name="@smarket/react-nav"></application>
+  </nav>
+  <main>
+    <route default>
+      <application name="@smarket/react-app"></application>
+    </route>
+
+    <route path="/vue">
+      <application name="@smarket/vue-app"></application>
+    </route>
+
+    <route path="/angular">
+      <iframe
+        src="http://localhost:4200/"
+        style="overflow: hidden; height: 100vh"
+        height="100%"
+        width="100%"
+      ></iframe>
+    </route>
+  </main>
+</single-spa-router>
